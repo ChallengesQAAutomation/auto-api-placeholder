@@ -15,19 +15,15 @@ import org.apache.logging.log4j.Logger;
 
 public class setupConfiguration {
 
-    static EnvironmentVariables environmentVariables;
-    public static Actor admin;
-    public static Actor student;
+    public static Actor user;
     @Managed(uniqueSession = true)
     private static final Logger logger = LogManager.getLogger(setupConfiguration.class);
 
     @Before
     public void prepareStage() {
-        String theRestApiBaseUrl ="";
+        String theRestApiBaseUrl ="https://jsonplaceholder.typicode.com";
         logger.info("\n Running......Env \n {} con la Base Url \n {} ",System.getProperty("env"), theRestApiBaseUrl);
-        admin = Actor.named("admin")
-                .whoCan(CallAnApi.at(theRestApiBaseUrl));
-        student = Actor.named("student")
+        user = Actor.named("user")
                 .whoCan(CallAnApi.at(theRestApiBaseUrl));
         OnStage.setTheStage(new OnlineCast());
     }
