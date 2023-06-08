@@ -52,11 +52,12 @@ src/main/java/question
 > 2 caso de prueba, duración aproximada de la ejecución ⏱️ 28 segundos.
 
 **Env Testing**
+>Reporte Completo en Serenity Report
 
 ````
 gradle :regression --tests "runners.PostRunner" :aggregate -Denv=testing
 ````
-
+> Reporte html simple
 ````
 gradle :regression --tests "runners.PostRunner" :reports -Denv=testing
 ````
