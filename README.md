@@ -1,23 +1,29 @@
-# auto-api-placeholder
+# Automatizacion del servicios PlaceHolder
 > Automatización de API con Screenplay, Serenity, REST, Cucumber y Gradle. Pruebas automatizadas con informes completos y fácil mantenimiento.
 
+[Ver repositorio](https://github.com/ChallengesQAAutomation/auto-api-placeholder)
 
-## Requerimientos
+
+## Requerimientos 🧗‍
 - Java
 - JDK 17
 - Graddle
 
-## Versiones
+## Versiones 🌐
 
 serenityCoreVersion = "3.3.10"
 
-## Instalacion
+## Instalación  ⌛
+
+```
+git clone https://github.com/ChallengesQAAutomation/auto-api-placeholder
+```
 
 ```
 gradle build
 ```
 
-## Estructura del proyecto
+## Estructura del proyecto 🦾
 
 Patron de diseño Screnplay usando serenity BDD
 
@@ -43,7 +49,7 @@ src/main/java/task
 ````
 src/main/java/question
 ````
-# Run Test
+# Run Test 🏆
 
 ## Run Regression Testing
 
@@ -63,15 +69,16 @@ gradle :regression --tests "runners.PostRunner" :reports -Denv=testing
 ````
 
 
-## Ver reportes
+## Ver reportes ☄️
 
 > :report
 ```
 /auto-api-testing/target/site/serenity/serenity-summary.html
 ```
-
+[Reporte Single Html](https://challengesqaautomation.github.io/auto-api-placeholder/target/site/serenity/serenity-summary.html)
 > :aggregate
 ```
 /auto-api-testing/target/site/serenity/index.html
 ```
+[Ver Reporte Completo](https://challengesqaautomation.github.io/auto-api-placeholder/target/site/serenity/index.html)
 
