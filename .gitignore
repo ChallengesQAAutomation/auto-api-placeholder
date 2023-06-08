@@ -22,7 +22,7 @@
 .gradle
 .idea
 build
-target/*
+
 
 logs
 gradle
