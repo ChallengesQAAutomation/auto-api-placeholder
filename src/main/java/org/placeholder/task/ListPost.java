@@ -4,7 +4,6 @@ import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Get;
-import org.placeholder.model.ResponsePost;
 import org.placeholder.model.ResponsePostItem;
 
 import java.util.List;
@@ -13,16 +12,16 @@ import static io.restassured.path.json.JsonPath.from;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static org.placeholder.utils.Constants.RESPONSE_POST;
 
-public class GetPost implements Task {
+public class ListPost implements Task {
 
     String resource;
 
-    public GetPost(String resource) {
+    public ListPost(String resource) {
         this.resource = resource;
     }
 
-    public static GetPost getPost(String resource) {
-        return instrumented(GetPost.class,resource);
+    public static ListPost getPost(String resource) {
+        return instrumented(ListPost.class,resource);
     }
     @Override
 

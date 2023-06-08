@@ -16,7 +16,6 @@ import static org.placeholder.utils.Constants.RESPONSE_POST;
 
 public class AttributesQuestion implements Question<Boolean> {
     DataTable expectedAttributes;
-    List<ResponsePostItem> responseItems;
     public AttributesQuestion(DataTable expectedAttributes) {
         this.expectedAttributes = expectedAttributes;
     }
