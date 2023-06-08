@@ -42,12 +42,17 @@ src/test/java/runners
 ````
 - Task: Logica del comportamiento
 ```
-src/main/java/task
+src/main/java/org/placeholder/task
 ```
 
 - Question: Logica de aserciones.
 ````
-src/main/java/question
+src/main/java/org/placeholder/question
+````
+
+- Model: Serializacion de los request y response
+````
+src/main/java/org/placeholder/model
 ````
 # Run Test 🏆
 
