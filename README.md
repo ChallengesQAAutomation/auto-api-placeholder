@@ -48,14 +48,19 @@ src/main/java/question
 ## Run Regression Testing
 
 
-- Journey Student: Un estudiante nuevo realiza las actividades de todas la unidades disponibles
-> 1 caso de prueba, duración aproximada de la ejecución ⏱️ 25 minutos.
+- Ejecucion de feature posts.
+> 2 caso de prueba, duración aproximada de la ejecución ⏱️ 28 segundos.
 
-**Env Prod**
+**Env Testing**
 
 ````
-gradle :clean :regression  "runners.JourneyStudent" :aggregate -Denv=prod
+gradle :regression --tests "runners.PostRunner" :aggregate -Denv=testing
 ````
+
+````
+gradle :regression --tests "runners.PostRunner" :reports -Denv=testing
+````
+
 
 ## Ver reportes
 
