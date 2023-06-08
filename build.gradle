@@ -71,15 +71,7 @@ test {
 
 }
 
-task smoke(type: Test) {
-    testLogging.showStandardStreams = true
-    //maxParallelForks = 3
-    systemProperty "cucumber.filter.tags", System.getProperty('cucumber.filter.tags')
-    systemProperty("tags", "smoke")
-    testLogging.showStandardStreams = true
-    systemProperties System.getProperties()
 
-}
 
 
 task regression(type: Test) {
@@ -90,15 +82,7 @@ task regression(type: Test) {
     systemProperties System.getProperties()
 }
 
-task issue(type: Test) {
-    testLogging.showStandardStreams = true
-    // maxParallelForks = 4
-    systemProperty "cucumber.filter.tags", System.getProperty('cucumber.filter.tags')
-    systemProperty("tags", "issue")
-    testLogging.showStandardStreams = true
-    systemProperties System.getProperties()
 
-}
 
 serenity {
     reports = ["single-page-html"]
